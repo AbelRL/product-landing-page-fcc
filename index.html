@@ -5,6 +5,85 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Product Landing Page - FreeCodeCamp</title>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body></body>
+	<body>
+		<div id="container">
+			<header id="header">
+				<div class="log">
+					<img src="img/Trek-logo.svg" alt="Trek usa" id="header-img" />
+				</div>
+				<nav id="nav-bar">
+					<ul>
+						<li id="nav-link"><a href="">Features</a></li>
+						<li id="nav-link"><a href="">Bikes</a></li>
+						<li id="nav-link"><a href="">Subscribe</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="main">
+				<section class="welcome">
+					<h1>#GoByBike</h1>
+					<p>There has never been a better time.</p>
+					<p>Our world, our responsibility</p>
+				</section>
+				<section class="feature">
+					<div id="video">
+						<iframe
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/pb4SpJKS_hA?controls=0"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<p>
+						Trek trail bikes are your do-more ride. They're versatile, light,
+						and exceedingly capable, climbing as well as they descend,
+						conquering trails from the Dolomites to Durango. These 29er and
+						27.5˝ mountain bikes have the MTB suspension capabilities for
+						anything from a quick stint on the trails to a brutal day of enduro
+						racing. No other bikes offer this level of no-compromise
+						performance, any-situation versatility
+					</p>
+				</section>
+				<section class="product">
+					<ul>
+						<li class="items">
+							<p>Remedy 8.2</p>
+							<img src="img/Remedy8275_2020.jpg" alt="" />
+							<p>$7,799 - $8,999</p>
+							<i class="fas fa-shopping-cart"></i>
+						</li>
+					</ul>
+				</section>
+				<section class="subscribe">
+					<form action="https://www.freecodecamp.com/email-submit" id="form">
+						<label for="email"></label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="yourmail@host.com"
+							required
+						/>
+						<input type="submit" id="submit" />
+					</form>
+				</section>
+			</div>
+			<footer>
+				<ul>
+					<li><a href="/">Link1</a></li>
+				</ul>
+				<p>Copyright 2020, @AbelRL - FreeCodeCamp</p>
+			</footer>
+		</div>
+		<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+		<script src="js/script.js"></script>
+	</body>
 </html>
