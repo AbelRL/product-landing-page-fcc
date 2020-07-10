@@ -5,26 +5,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Product Landing Page - FreeCodeCamp</title>
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
-		/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<div id="container">
 			<header id="header">
 				<div class="logo">
-					<img src="img/Trek-logo.svg" alt="Trek usa" id="header-img" />
+					<img src="img/trek-logo.png" alt="Trek usa" id="header-img" />
 				</div>
 				<nav id="nav-bar">
 					<ul>
-						<li id="nav-link"><a href="">Features</a></li>
-						<li id="nav-link">
-							<a href="">Bikes</i></a>
+						<li><a class="nav-link" href="#featuresBK">Features</a></li>
+						<li>
+							<a class="nav-link" href="#bikesBK">Bikes</i></a>
 						</li>
-						<li id="nav-link">
-							<a href=""><i class="fas fa-envelope"></i></a>
+						<li>
+							<a class="nav-link" href="#subscriptionBk"><span class="material-icons">
+								subscriptions
+								</span></a>
 						</li>
 					</ul>
 				</nav>
@@ -35,55 +35,118 @@
 					<p>There has never been a better time.</p>
 					<p>Our world, our responsibility</p>
 				</section>
-				<section class="feature">
-					<div id="video">
+				<section class="feature" id="featuresBK">
+					<div class="video-feature">
 						<iframe
 							src="https://www.youtube.com/embed/pb4SpJKS_hA?controls=0"
 							frameborder="0"
 							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen
+							id="video"
 						></iframe>
 					</div>
 					<div class="text-feature">
 					<h2>Trek Bikes</h2>
+					
 					<p>
+						
 						Trek trail bikes are your do-more ride. They're versatile, light,
 						and exceedingly capable, climbing as well as they descend,
-						conquering trails from the Dolomites to Durango. These 29er and
+						conquering trails from the Dolomites to Durango.</p>
+						<span class="material-icons">
+							directions_bike
+							</span>
+						<p>These 29er and
 						27.5˝ mountain bikes have the MTB suspension capabilities for
 						anything from a quick stint on the trails to a brutal day of enduro
-						racing. No other bikes offer this level of no-compromise
+						racing.</p>
+						<span class="material-icons">
+							engineering
+							</span>
+						<p>No other bikes offer this level of no-compromise
 						performance, any-situation versatility
 					</p>
 				</div>
+				<div class="divider div-transparent div-dot"></div>
 				</section>
-				<section class="product">
-					<ul>
+				<section class="product" id="bikesBK">
+					<ul class="list-items">
+						<!-- Item Products -->
 						<li class="items">
-							<p>Remedy 8.2</p>
+							<h3>Remedy 8</h3>
 							<img src="img/Remedy8275_2020.jpg" alt="" />
-							<p>$7,799 - $8,999</p>
-							<i class="fas fa-shopping-cart"></i>
+							<div class="item-prices">
+							<span class="ip-price">$3,999.99</span>
+							<span class="material-icons ip-icon">
+								shopping_cart
+								</span>
+							</div>
+						</li>
+						<li class="items">
+							<h3>Remedy 9.7</h3>
+							<img src="img/Remedy97275_2020.jpg" alt="" />
+							<div class="item-prices">
+							<span class="ip-price">$4,499.00</span>
+							<span class="material-icons ip-icon">
+								shopping_cart
+								</span>
+							</div>
+						</li>
+						<li class="items">
+							<h3>Slash 9.8 XT</h3>
+							<img src="img/Slash9829XT_2020.jpg" alt="" />
+							<div class="item-prices">
+							<span class="ip-price">$5,899.99 - $6,399.00</span>
+							<span class="material-icons ip-icon">
+								shopping_cart
+								</span>
+							</div>
+						</li>
+						<li class="items">
+							<h3>Slash 9.9</h3>
+							<img src="img/Slash9929XO1AXS_2020.jpg" alt="" />
+							<div class="item-prices">
+							<span class="ip-price">$7,499.99 - $7,999.00</span>
+							<span class="material-icons ip-icon">
+								shopping_cart
+								</span>
+							</div>
+						</li>
+						<li class="items">
+							<h3>Slash 9.9 XTR</h3>
+							<img src="img/Slash9929XTR_2020.jpg" alt="" />
+							<div class="item-prices">
+							<span class="ip-price">$7,799 - $8,999</span>
+							<span class="material-icons ip-icon">
+								shopping_cart
+								</span>
+							</div>
 						</li>
 					</ul>
 				</section>
-				<section class="subscribe">
-					<form action="https://www.freecodecamp.com/email-submit" id="form">
-						<label for="email"></label>
+				<section class="subscribe" id="subscriptionBk">
+					<div class="item-sub headersubs">Sign me up!</div>
+					<div class="item-sub textsubs">Get special offers, exclusive product news, and event info straight to your inbox.</div>
+					<form action="https://www.freecodecamp.com/email-submit" id="form" class="item-sub">
 						<input
 							type="email"
 							id="email"
 							name="email"
 							placeholder="yourmail@host.com"
+							class="item-form"
 							required
 						/>
-						<input type="submit" id="submit" />
+						<input type="submit" id="submit" class="item-form" value="Join"/>
 					</form>
 				</section>
 			</div>
 			<footer>
 				<ul>
-					<li><a href="/">Link1</a></li>
+					<li><a class="nav-link" href="https://github.com/AbelRL/product-landing-page-fcc" title="Git-Hub Repositorie" target="_blank"><span class="material-icons">
+						bug_report
+						</span></a></li>
+					<li><a class="nav-link" href="https://codepen.io/abelrl/full/mdVKdrG" target="_blank">codepen</i></a>
+					</li>
 				</ul>
 				<p>Copyright 2020, @AbelRL - FreeCodeCamp</p>
 			</footer>
