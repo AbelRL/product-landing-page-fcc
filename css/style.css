@@ -55,10 +55,11 @@ footer,
 	color: whitesmoke;
 }
 .main {
-	padding-top: 5vh;
+	padding-top: 47px;
 }
 .welcome {
 	background-image: url('/img/trek-image-home.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 30vh;
 	display: flex;
@@ -109,7 +110,7 @@ footer,
 }
 .list-items {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	grid-gap: 1rem 2rem;
 }
 .items,
@@ -130,6 +131,10 @@ footer {
 .items:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.items:hover .ip-icon {
+	color: gold;
+	transition: color 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
 .item-prices {
 	background: #2b2d42;
 	padding: 0.4rem;
@@ -143,8 +148,41 @@ footer {
 	font-size: 0.9rem;
 }
 .ip-icon {
-	color: gold;
+	color: goldenrod;
 	cursor: pointer;
+}
+.finder {
+	background-image: url('https://1.bp.blogspot.com/-PSV6Zdzy-Zs/XwfWRYFL_jI/AAAAAAAAHiM/nIVthlAixAYjb9pFdpC7YCqkF5mIn_PKACLcBGAsYHQ/s1600/Ad_Card_bike_finder_2019.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 300px;
+	color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: end;
+	cursor: pointer;
+}
+.finder h3 {
+	font-size: 2.33rem;
+	font-weight: 600;
+	padding-bottom: 1rem;
+}
+.finder p {
+	background: rgba(0, 0, 0, 0.8);
+	color: goldenrod;
+	padding: 0.5rem;
+}
+.arrow-text {
+	color: whitesmoke;
+	text-decoration: underline;
+	padding: 0.5rem;
+}
+.arrow-link::after {
+	content: '\25B6\FE0E';
+	padding-left: 0.4rem;
+	font-size: 0.725rem;
+	text-decoration: none;
 }
 .divider {
 	position: relative;
@@ -235,18 +273,116 @@ footer ul {
 footer .nav-link {
 	color: rgba(245, 245, 245, 0.2);
 }
-/* Mobile devices */
-@media (max-width: 480px) {
+/* portrait */
+@media (min-width: 481px) and (max-width: 760px) {
+	.main {
+		padding-top: 45px;
+	}
+	.welcome {
+		min-height: 40vh;
+	}
+	#video {
+		height: 50vh;
+	}
 }
-/* iPads, Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-}
-/* Small screens, laptops */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* iPads, Tablets, Small screens, laptops */
+@media (min-width: 761px) and (max-width: 1024px) {
+	.main {
+		padding-top: 46px;
+	}
+	.welcome {
+		min-height: 40vh;
+	}
+	.feature {
+		flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
+		align-items: center;
+	}
+	.video-feature,
+	.text-feature {
+		flex: 1;
+	}
+	#video {
+		height: 350px;
+	}
+	.text-feature .material-icons {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	.item-form {
+		width: 60%;
+	}
 }
 /* Desktops, large screens */
 @media (min-width: 1025px) and (max-width: 1200px) {
+	.welcome {
+		min-height: 46px;
+	}
+	.welcome {
+		min-height: 400px;
+	}
+	.feature {
+		flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
+		align-items: center;
+	}
+	.video-feature,
+	.text-feature {
+		flex: 1;
+	}
+	#video {
+		height: 350px;
+	}
+	.text-feature .material-icons {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	.item-form {
+		width: 55%;
+	}
 }
 /* Extra large screens, TV */
 @media (min-width: 1201px) {
+	.welcome {
+		min-height: 46px;
+	}
+	.welcome {
+		min-height: 400px;
+	}
+	.feature {
+		flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
+		align-items: center;
+	}
+	.video-feature,
+	.text-feature {
+		flex: 1;
+	}
+	#video {
+		height: 370px;
+	}
+	.welcome,
+	.feature,
+	.product,
+	.div-transparent:before {
+		width: 80%;
+		margin: auto;
+	}
+	.list-items {
+		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	}
+	.welcome,
+	.feature,
+	.product {
+		margin-bottom: 50px;
+	}
+	.item-form {
+		width: 40%;
+	}
+	.logo {
+		padding-left: 10%;
+	}
+	#nav-bar {
+		padding-right: 10%;
+	}
 }
